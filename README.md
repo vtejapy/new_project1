@@ -1,1 +1,3 @@
-# new_project1
+cd dev1
+
+python hello.py
