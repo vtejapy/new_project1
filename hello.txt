@@ -1,1 +1,1 @@
-1 
+curl -s https://raw.githubusercontent.com/vtejapy/HAPROXY/master/data.xml | grep latest | sed "s/.*<latest>\([^<]*\)<\/latest>.*/\1/"
