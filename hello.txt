@@ -1,1 +1,9 @@
-curl -s https://raw.githubusercontent.com/vtejapy/HAPROXY/master/data.xml | grep latest | sed "s/.*<latest>\([^<]*\)<\/latest>.*/\1/"
+ID=$(curl -s https://raw.githubusercontent.com/vtejapy/HAPROXY/master/data.xml | grep latest | sed "s/.*<latest>\([^<]*\)<\/latest>.*/\1/")
+
+echo version=$ID > new.txt
+source new.txt
+
+or 
+
+echo 'export version=$ID' > new.txt
+source new.txt
